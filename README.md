@@ -1,6 +1,6 @@
 # Roest 
 
-![](https://github.com/jeroenh/roestd/raw/hoofd/logo.jpeg)
+![](https://raw.githubusercontent.com/jeroenhd/roest/hoofd/logo.png)
 
 Aren't you _het spuugzat_ from writing Rust programs in English? Do you like saying
 "kut" a lot? Would you like to try something different, in an exotic and
@@ -64,7 +64,7 @@ here and there, and open a pull-request against the `hoofd` (Dutch for
 
 ## met dank aan
 
-- [Benjamin Bouvier] (https://github.com/bnjbvr/), Eric BREHAULT and Anisse Astier for their work on roullie
+- [Benjamin Bouvier] (https://github.com/bnjbvr/), Eric BREHAULT and Anisse Astier for their work on [rouille](https://github.com/bnjbvr/rouille)
 
 ## licentie
 
