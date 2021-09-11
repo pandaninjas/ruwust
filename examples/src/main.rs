@@ -1,73 +1,73 @@
-rouille::rouille! {
-    externe cagette rouille;
+roest::roest! {
+    extern krat roest;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+    gebruik std::collections::Woordenboek zoals Wbk;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
+    karaktereigenschap SleutelWaarde {
+        functie schrijf(&zelf, sleutel: Keten, waarde: Keten);
+        functie lees(&zelf, sleutel: Keten) -> Mogelijkheid<&Keten>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    vast veranderlijk WOORDENBOEK: Mogelijkheid<Wbk<Keten, Keten>> = Geen;
 
-    structure Concrète;
+    structuur Concreet;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    uitwerking SleutelWaarde voor Concreet {
+        functie schrijf(&zelf, sleutel: Keten, waarde: Keten) {
+            laat wk = gevaarlijk {
+                WOORDENBOEK.verkrijg_of_voeg_toe_met(Standaard::standaard)
             };
-            dico.insérer(clé, valeur);
+            wk.voeg_in(sleutel, waarde);
         }
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine> {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+        functie lees(&zelf, sleutel: Keten) -> Mogelijkheid<&Keten> {
+            laat wk = gevaarlijk {
+                WOORDENBOEK.verkrijg_of_voeg_toe_met(Standaard::standaard)
             };
-            dico.lire(&clé)
+            wk.verkrijg(&sleutel)
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaine>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaine::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+    openbaar(krat) functie misschien(i: u32) -> Mogelijkheid<Resultaat<u32, Keten>> {
+        als i % 2 == 1 {
+            als i == 42 {
+                Enige(Ft(Keten::van("poep")))
+            } anders {
+                Enige(Goed(33))
             }
-        } sinon {
-            Rien
+        } anders {
+            Geen
         }
     }
 
-    asynchrone fonction exemple() {
+    gelijktijdige functie voorbeeld() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    gelijktijdige functie voorbeeld2() {
+        voorbeeld().wacht_af;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    functie hoofd() {
+        laat veranderlijk x = 31;
 
-        correspond x {
+        gelijkend x {
             42 => {
-                affiche!("omelette du fromage")
+                schrijfrgl!("pannekoek")
             }
-            _ => affiche!("voila")
+            _ => schrijfrgl!("zie daar")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        voor i binnen 0..10 {
+            laat val = lus {
+                ontsnap i;
             };
 
-            tant que x < val {
+            zolang x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = als laat Enige(resultaat) = misschien(i) {
+                resultaat.pak_uit()
+            } anders {
                 12
             };
         }
