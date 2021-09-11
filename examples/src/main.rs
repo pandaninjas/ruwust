@@ -5,7 +5,7 @@ roest::roest! {
 
     karaktereigenschap SleutelWaarde {
         functie schrijf(&zelf, sleutel: Keten, waarde: Keten);
-        functie lees(&zelf, sleutel: Keten) -> Mogelijkheid<&Keten>;
+        functie lees(&zelf, sleutel: Keten) -> Resultaat<Mogelijkheid<&Keten>, Keten>;
     }
 
     vast veranderlijk WOORDENBOEK: Mogelijkheid<Wbk<Keten, Keten>> = Geen;
@@ -19,11 +19,16 @@ roest::roest! {
             };
             wk.voeg_in(sleutel, waarde);
         }
-        functie lees(&zelf, sleutel: Keten) -> Mogelijkheid<&Keten> {
-            laat wk = gevaarlijk {
-                WOORDENBOEK.verkrijg_of_voeg_toe_met(Standaard::standaard)
-            };
-            wk.verkrijg(&sleutel)
+        functie lees(&zelf, sleutel: Keten) -> Resultaat<Mogelijkheid<&Keten>, Keten> {
+            // laat wk = gevaarlijk {
+            //     WOORDENBOEK.verkrijg_of_voeg_toe_met(Standaard::standaard)
+            // };
+            // wk.verkrijg(&sleutel)
+            als laat Enige(wbk) = gevaarlijk { WOORDENBOEK.als_verw() } {
+                Goed(wbk.verkrijg(&sleutel))
+            } anders {
+                Ft("ophalen uit woordenboek".tot())
+            }
         }
     }
 

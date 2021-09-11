@@ -61,6 +61,11 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "gebruik" => "use",
         "waar" => "true",
         "opsomming" => "enum",
+        "tot" => "into",
+        "verw" => "ref",
+        "als_verw" => "as_ref",
+        "onbereikbare_code" => "unreachable_code",
+        "sta_toe" => "allow",
 
         _ => &ident_str,
     };
