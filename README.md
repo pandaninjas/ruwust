@@ -1,6 +1,6 @@
 # Roest 
 
-![](https://github.com/jeroenh/roestd/raw/hoofd/logo.png)
+![](https://raw.githubusercontent.com/jeroenhd/roest/hoofd/logo.png)
 
 Aren't you _het spuugzat_ from writing Rust programs in English? Do you like saying
 "kut" a lot? Would you like to try something different, in an exotic and
