@@ -64,7 +64,7 @@ here and there, and open a pull-request against the `hoofd` (Dutch for
 
 ## met dank aan
 
-- [Benjamin Bouvier] (https://github.com/bnjbvr/), Eric BREHAULT and Anisse Astier for their work on [rouille](https://github.com/bnjbvr/rouille)
+- [Benjamin Bouvier](https://github.com/bnjbvr/), Eric BREHAULT and Anisse Astier for their work on [rouille](https://github.com/bnjbvr/rouille)
 
 ## licentie
 
