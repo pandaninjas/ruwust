@@ -1,10 +1,8 @@
-# Roest 
+# Ruwust
 
-![](https://raw.githubusercontent.com/jeroenhd/roest/hoofd/logo.png)
-
-Aren't you _het spuugzat_ from writing Rust programs in English? Do you like saying
-"kut" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some Dutch touch to your
+Awen't you eepy fwom wwiting 'Rust' pwogwams in Engwish? Do you wike saying
+"nyaa" a wot? Wouwd you wike to twy something diffewent, in awn exawtic and
+funny-souwnding wanguwuage? Would you want to bring some Dutch touch to your
 programs?
 
 **roest** (Dutch for _Rust_) is here to save your day, as it allows you to
