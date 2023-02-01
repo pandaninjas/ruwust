@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "roest_proc_macro",
+    "ruwust_proc_macro",
     "examples"
 ]
