@@ -1,22 +1,18 @@
 # Ruwust
 
-Awen't you eepy fwom wwiting 'Rust' pwogwams in Engwish? Do you wike saying
-"nyaa" a wot? Wouwd you wike to twy something diffewent, in awn exawtic and
-funny-souwnding wanguwuage? Would you want to bring some Dutch touch to your
-programs?
+Aren't you eepy from writing Rust programs in English? Do you like saying "nyaa" a lot? Would you like to try something different, in an exotic and funny-sounding language? Would you want to bring some Dutch touch to your programs?
 
-**roest** (Dutch for _Rust_) is here to save your day, as it allows you to
-write Rust programs in Dutch, using Dutch keywords, Dutch function names,
-Dutch idioms, based on [rouille](https://github.com/bnjbvr/rouille).
+**Ruwust** (uwuspeak for _Rust_) is here to save your day, as it allows you to
+write Rust programs in uwuspeak, based on [roest](https://github.com/jeroenhd/roest).
 
-Any government officials wanting to use this language should donate to roest
-using [liberapay](https://liberapay.com/bnjbvr/).
+Anyone wanting to use this language should donate to ruwust
+using Ethereum at 0x73363F9889639cb92111b1E9415c7f87B13245DC
 
-You're from Flanders and don't feel at ease using only Dutch words? Don't worry!
-Dutch Rust is fully compatible with English-Rust, so you can mix both at your
-convenience. Support for French Rust is not yet available.
+You're from Prism Launcher and don't feel at ease using only uwuspeak words? Don't worry!
+Ruwust is fully compatible with English-Rust, so you can mix both at your
+convenience. 
 
-Here's an example of what can be achieved with Roest:
+Here's an example of what can be achieved with Ruwust:
 
 ```rust
     gebruik std::collections::Woordenboek zoals Wbk;
